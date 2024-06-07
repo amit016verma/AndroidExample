@@ -39,13 +39,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             ExampleTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    Greeting(
-//                        name = "Android CI/CD World!",
-//                        modifier = Modifier.padding(innerPadding)
-//                    )
-                    SayHelloScreen()
-                }
+                SayHelloScreen()
             }
         }
     }
