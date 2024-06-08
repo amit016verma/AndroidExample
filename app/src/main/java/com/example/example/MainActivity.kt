@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun SayHelloScreen(){
-    var userName by remember { mutableStateOf("") }
+    var userName by remember { mutableStateOf("CI/CD") }
     var isDisplayText by remember { mutableStateOf(false) }
 
     Column {
@@ -80,9 +80,9 @@ fun SayHelloScreen(){
 
         }
 
-        if (isDisplayText){
+     //   if (isDisplayText){
             Greeting(name = userName)
-        }
+       // }
 
 
     }
